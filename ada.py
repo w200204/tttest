@@ -28,9 +28,9 @@ class Consumer(threading.Thread):
         hold_flag = False
         wait_flag = False
 
-        with open("upbit.txt", "r") as f:
-            key0 = f.readline().strip()
-            key1 = f.readline().strip()
+        
+        key0 = "lSEPpRxnwmHfxiRUJQIi7qo6KhCcNMX58LfKxBl0"
+        key1 = "AxmzFSo5rlwpIoA825pfSusk6pfHtYMdPDyVEHFD"
 
         upbit = pyupbit.Upbit(key0, key1)
         cash  = upbit.get_balance()
