@@ -29,8 +29,8 @@ class Consumer(threading.Thread):
         wait_flag = False
 
         
-        key0 = "lSEPpRxnwmHfxiRUJQIi7qo6KhCcNMX58LfKxBl0"
-        key1 = "AxmzFSo5rlwpIoA825pfSusk6pfHtYMdPDyVEHFD"
+        key0 = 
+        key1 = 
 
         upbit = pyupbit.Upbit(key0, key1)
         cash  = upbit.get_balance()
