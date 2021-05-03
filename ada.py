@@ -62,7 +62,7 @@ class Consumer(threading.Thread):
                     price_curr >= price_buy and curr_ma15 >= curr_ma50 and \
                     curr_ma15 <= curr_ma50 * 1.03 and curr_ma120 <= curr_ma50 :
                     # 0.05%
-                    ret = upbit.buy_market_order(self.ticker, 200000 * 0.9995)
+                    ret = upbit.buy_market_order(self.ticker, 100000 * 0.9995)
                     print("매수주문", ret)
                     time.sleep(1)
                     volume = upbit.get_balance(self.ticker)
